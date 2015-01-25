@@ -1,0 +1,49 @@
+if there is nothing picked in the slot, there will be a zero entered into the nominations. 
+
+if you do enter something there will be a number corresponding to the person/film that you chose. So
+if I do not want to enter a film I will simply leave it blank, however, if I want to put in a nomination
+to the best film category I will select Gravity. then, and i guess that i could do this a few ways, 
+but I think that this is the best way, I will wait until the oscars are over and then i will simply 
+compare the finished results with the winners ones, and then 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//Declare the submit value
+//$submit = $_POST['submit'];
+//echo "LOG: value of submit is ". $submit;
+$firstname = strip_tags($_GET['nameField']);
+echo "LOG: value of name is is ". $firstname;
+
+$email = strip_tags($_GET['emailField']);
+echo "LOG: value of email is ". $email;
+
+//Make the connection to mysql
+$con = mysql_connect("localhost","root","");
+if (!$con)
+{
+	die('Could not connect: ' . mysql_error());
+}
+var_dump($con);
+
+mysql_select_db($mysql_name, $con);
+
+//Check if username already exists
+//$namecheck = mysql_query("SELECT username FROM users WHERE username='$username'");
+//Create a count variable, if we successfully count 1 then username already exists
+//$count = mysql_num_rows($namecheck);
+/*if($count!=0)
+{
+	die("Username already exists...");
+}
+*/

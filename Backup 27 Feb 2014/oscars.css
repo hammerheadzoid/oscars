@@ -1,0 +1,233 @@
+*
+{
+	font-family:Arial,Helvetica,sans-serif;
+}
+
+/* All The IDs Go Here*/
+#currentTime	/* This is for the timer */
+{
+	width: 980px;
+	text-align: right;
+	background-color:#e8e8e5;
+}
+
+#container
+{
+	margin: 0px auto 0px auto;
+	width: 980px;
+	background-color: #ffffff;
+	padding: 0;
+}
+
+#header
+{
+	width: 980px;
+	float: left;
+	margin:0px 0px 0px 0px;
+	padding: 0 0 0 0;
+}
+
+#navigation{
+	float: left;
+	width: 180px;
+	background-color: #006600; /*green*/
+	padding-left: 0px;
+}
+#content
+{
+	width: 600px;
+	float: left;
+	background-color: #ffffff;
+	min-height: 600px; 
+	padding-top:0px;
+	padding-right:20px;
+	padding-bottom:0px;
+	padding-left:20px;
+	margin-right:10px;
+}
+
+#addbar
+{	width: 150px;
+	float: left;
+	margin-top:0px;
+	padding: 0 0 0 0;
+}
+
+#footer
+{
+	font-size: 10px;
+	text-align: center;
+	color: green;
+	width: 980px;
+	float: left;
+	background-color: #CCFFCC;
+	margin: 0px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+#meetTheTeamBox
+{
+	background-color: #CCFFCC;
+	border-style:solid;
+	border-width:2px;
+	float: left;
+	font-size: 10px;
+	width: 600px;
+	margin-bottom: 10px
+}
+/* START OF FORMS CSS */
+#contactContainer
+{
+    width: 550px;
+    text-align: left;
+}
+
+#myFormLabel
+{
+    width: 100px;
+    float: left;
+    text-align: left;
+	color: light-grey;
+	height: 30px;
+	font-size: 11px;
+}
+#myFormForm
+{
+    width: 450px;
+    float: left;
+    text-align: left;
+	height: 30px;
+	color: yellow;
+}
+/* END OF FORMS CSS*/
+
+/* START OF SPECIAL OFFER PIECE*/
+
+#specialoffercontainer
+{
+	margin: 0px auto 0px auto;
+	float: left;
+	width: 600px;
+	background-color: white;
+	padding: 0;
+}
+
+/* All The Classes Go Here*/
+.menu_items
+{
+	font-size: 16px;
+	margin-top: 15px;
+	margin-bottom: 10px;
+}
+.clear
+{
+    clear: both;
+    height: 50px;
+}
+
+.verticalbox
+{
+	margin: auto;
+	text-align: center;
+	float: left;
+	background-color: white;
+	padding: 0;
+}
+
+.smallbox
+{
+	margin: 1px;
+	width: 190px;
+	float: left;
+	text-align: center;
+	vertical-align: middle;
+	background-color: white;
+	padding: 0;
+}
+
+ul.colorbar
+{
+	background-color: #CCFFCC;
+	border-style:solid;
+	border-width:2px;
+	padding-top: -10px;
+	padding-right: 0px;
+	padding-bottom: -10px;
+	padding-left: 0px;
+}
+
+
+/* END OF SPECIAL OFFER PIECE*/
+
+
+/* All The Basic Tags Go Here*/
+
+select {
+	margin-right: 20px;
+}
+
+body {
+	background-image:url('images/matrixcode.jpg');
+	background-attachment:fixed;
+}
+
+table {
+	background-color: #006600; /* light-green in footer */
+}
+
+h1 {	
+	font-size: 22px;
+	color: #006600; /* green */
+	border-bottom: 2px solid green;
+} 
+
+h3 {	
+	font-size: 16px;
+	text-align: left;
+	color: #000000; /* black */
+}
+
+h4 {	
+	font-size: 14px;
+	text-align: centre;
+	color: #000000; /* black */
+}
+
+ul {
+	list-style: none;
+	margin-top: 0px;
+	font-size: 13px;
+}
+
+dl {
+	list-style: none;
+	margin-top: 3px;
+	font-size: 13px;
+}
+
+
+li {
+	padding-top: 5px;
+	padding-right: 0px;
+	padding-bottom: 5px;
+	padding-left: 0px;
+	margin-left: -20px;
+}
+
+p  { 
+	color: #000000;
+	font-size: 35px;
+}
+
+a {
+	text-decoration:none;
+}
+
+a:link {color:black} /* Unvisited Link */
+a:visited {color:black} /* Visited Link */
+a:hover {color:black; background-color: #CCFFCC; padding: 3px; border: 2px solid #228B22;} /* Mouse over Link */
+a:active {color: #2F4F4F; font-style:italic;} /* Selected Link */
+
+
+

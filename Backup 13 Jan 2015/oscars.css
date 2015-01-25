@@ -1,0 +1,203 @@
+*
+{
+	font-family:Arial,Helvetica,sans-serif;
+}
+
+/* All The IDs Go Here*/
+#currentTime	/* This is for the timer */
+{
+	width: 980px;
+	text-align: right;
+	background-color:#e8e8e5;
+}
+
+#container
+{
+	border: 1px solid black;
+	border-radius: 25px;
+	width: 1000px;
+	background: rgba(255,255,255,.8);
+	margin: 20px auto;
+	text-align: left;
+	padding: 20px;
+}
+
+IMG.displayed {
+    display: block;
+    margin-left: auto;
+    margin-right: auto 
+}
+
+.topPic
+{	
+	background-image:url('oscars-2014-nominees.png');
+	background-repeat: no-repeat;
+	height: 319px;
+}
+
+.topPic.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#navigation{
+	float: left;
+	width: 180px;
+	background-color: #006600; /*green*/
+	padding-left: 0px;
+}
+#content
+{
+	width: 600px;
+	float: left;
+	background-color: #ffffff;
+	min-height: 600px; 
+	padding-top:0px;
+	padding-right:20px;
+	padding-bottom:0px;
+	padding-left:20px;
+	margin-right:10px;
+}
+
+#addbar
+{	width: 150px;
+	float: left;
+	margin-top:0px;
+	padding: 0 0 0 0;
+}
+
+#footer
+{
+	font-size: 10px;
+	text-align: center;
+	color: green;
+	width: 980px;
+	float: left;
+	background-color: #CCFFCC;
+	margin: 0px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+
+/* START OF FORMS CSS */
+#contactContainer
+{
+    width: 550px;
+    text-align: left;
+}
+
+#myFormLabel
+{
+    width: 100px;
+    float: left;
+    text-align: left;
+	color: light-grey;
+	height: 30px;
+	font-size: 11px;
+}
+#myFormForm
+{
+    width: 450px;
+    float: left;
+    text-align: left;
+	height: 30px;
+	color: yellow;
+}
+/* END OF FORMS CSS*/
+
+/* START OF SPECIAL OFFER PIECE*/
+
+#specialoffercontainer
+{
+	margin: 0px auto 0px auto;
+	float: left;
+	width: 600px;
+	background-color: white;
+	padding: 0;
+}
+
+/* All The Classes Go Here*/
+.clear
+{
+    clear: both;
+    height: 10px;
+}
+
+/* All The Basic Tags Go Here*/
+
+select {
+	margin-right: 20px;
+}
+
+body {
+	background-image:url('oscars_bg.jpg');
+	background-attachment:fixed;
+}
+
+table {
+	background-color: #006600; /* light-green in footer */
+}
+
+hr {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	color: #006600; /* green */
+}
+
+h1 {	
+	font-size: 22px;
+	color: #006600; /* green */
+	border-bottom: 2px solid green;
+} 
+
+h3 {	
+	font-size: 16px;
+	text-align: left;
+	color: #000000; /* black */
+}
+
+h4 {	
+	font-size: 14px;
+	text-align: centre;
+	color: #000000; /* black */
+}
+
+ul {
+	list-style: none;
+	margin-top: 0px;
+	font-size: 13px;
+}
+
+dl {
+	list-style: none;
+	margin-top: 3px;
+	font-size: 13px;
+}
+
+
+li {
+	padding-top: 5px;
+	padding-right: 0px;
+	padding-bottom: 5px;
+	padding-left: 0px;
+	margin-left: -20px;
+}
+
+p  { 
+	color: #000000;
+	font-size: 12px;
+}
+
+a {
+	text-decoration:none;
+}
+
+a:link {color:black} /* Unvisited Link */
+a:visited {color:black} /* Visited Link */
+a:hover {color:black;} /* Mouse over Link */
+a:active {color: #2F4F4F} /* Selected Link */
+
+
+
