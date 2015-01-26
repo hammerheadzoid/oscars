@@ -37,7 +37,7 @@ if(isset($_SESSION['name']))
 	<hr>
 	<?php
 		// This might be a good place to make sure that the place names are remembered. 
-		if ($flagMe == "see")
+		/*if ($flagMe == "see")
 		{
 			echo "nice buns doll";
 			$list1 = 99;
@@ -45,30 +45,51 @@ if(isset($_SESSION['name']))
 		else
 		{
 			$list1 = 88;
-		}
-		$list2 = 0;
-		$list3 = 0;
-		$list4 = 0;
-		$list5 = 0;
-		$list6 = 0;
-		$list7 = 0;
-		$list8 = 0;
-		$list9 = 0;
+		}*/
+		//if ()
+		$GLOBALS[$list1] = 0;
+		$GLOBALS[$list2] = 0;
+		$GLOBALS[$list3] = 0;
+		$GLOBALS[$list4] = 0;
+		$GLOBALS[$list5] = 0;
+		$GLOBALS[$list6] = 0;
+		$GLOBALS[$list7] = 0;
+		$GLOBALS[$list8] = 0;
+		$GLOBALS[$list9] = 0;
 		echo "We are at the beginning $list1,$list2,$list3,$list4,$list5,$list6,$list7,$list8,$list9";
 	?>
 	<form>
 	<h3>Best Picture:</h3>
-	<select id="myList1" name="noms1">
-		<option value=0 selected>(Choose Best Picture)</option>
-		<option value=1>American Sniper (Clint Eastwood)</option>
-		<option value=2>Boyhood (Richard Linklater)</option>
-		<option value=3>Birdman (Alejandro González Iñárritu) </option>
-		<option value=4>The Grand Budapest Hotel (Wes Anderson)</option>
-		<option value=5>The Imitation Game (Morten Tyldum)</option>
-		<option value=6>Selma (Ava DuVernay)</option>
-		<option value=7>The Theory of Everything (James Marsh)</option>
-		<option value=8>Whiplash (Damien Chazelle)</option>
-	</select>
+	<?php
+	if($GLOBALS[$list1] == 0)
+	{
+		echo "<select id='myList1' name='noms1'>
+			<option value=0 selected>(Choose Best Picture)</option>
+			<option value=1>American Sniper (Clint Eastwood)</option>
+			<option value=2>Boyhood (Richard Linklater)</option>
+			<option value=3>Birdman (Alejandro González Iñárritu) </option>
+			<option value=4>The Grand Budapest Hotel (Wes Anderson)</option>
+			<option value=5>The Imitation Game (Morten Tyldum)</option>
+			<option value=6>Selma (Ava DuVernay)</option>
+			<option value=7>The Theory of Everything (James Marsh)</option>
+			<option value=8>Whiplash (Damien Chazelle)</option>
+		</select>";
+	}
+	else
+	{
+		echo "<select id='myList1' name='noms1'>
+			<option value=0 selected>(Choose Best Picture)</option>
+			<option value=1>American Sniper (Clint Eastwood)</option>
+			<option value=2>Boyhood (Richard Linklater)</option>
+			<option value=3>Birdman (Alejandro González Iñárritu) </option>
+			<option value=4>The Grand Budapest Hotel (Wes Anderson)</option>
+			<option value=5>The Imitation Game (Morten Tyldum)</option>
+			<option value=6>Selma (Ava DuVernay)</option>
+			<option value=7>The Theory of Everything (James Marsh)</option>
+			<option value=8>Whiplash (Damien Chazelle)</option>
+		</select>" ;
+	}
+	?>
 	</br></br>
 	<h3>Best Directing:</h3>
 	<select id="myList2" name="noms2">
@@ -154,15 +175,14 @@ if(isset($_SESSION['name']))
 	
 	</br>
 	<?php
-		echo "before button $list1,$list2,$list3,$list4,$list5,$list6,$list7,$list8,$list9</br>";
-		echo '<input type="submit" value="Choose These Options"></br>';
-		echo "after button $list1,$list2,$list3,$list4,$list5,$list6,$list7,$list8,$list9";
-	
+		echo "before button ".$GLOBALS['list1'],$GLOBALS['list2'],$GLOBALS['list3'],$GLOBALS['list4'],$GLOBALS['list5'],$GLOBALS['list6'],$GLOBALS['list7'],$GLOBALS['list8'],$GLOBALS['list9']."</br>";
+		echo '<input type="submit" value="Choose 0 Options"></br>';
+		
 		if ($_GET['noms1']) 
 		{
-			$got1 = $_GET['noms1'];
-			$list1 = $got1;
-			switch ($list1)
+			$GLOBALS['got1'] = $_GET['noms1'];
+			$GLOBALS['list1'] = $GLOBALS['got1'];
+			switch ($GLOBALS['list1'])
 			{
 				case 1:
 					$noms1 = "American Sniper (Clint Eastwood)";
@@ -194,9 +214,9 @@ if(isset($_SESSION['name']))
 		}
 		if ($_GET['noms2']) 
 		{
-			$got2 = $_GET['noms2'];
-			$list2 = $got2;
-			switch ($list2)
+			$GLOBALS['got2'] = $_GET['noms2'];
+			$GLOBALS['list2'] = $GLOBALS['got2'];
+			switch ($GLOBALS['list2'])
 			{
 				case 1:
 					$noms2 = "Wes Anderson (The Grand Budapest Hotel)";
@@ -219,9 +239,9 @@ if(isset($_SESSION['name']))
 		}
 		if ($_GET['noms3']) 
 		{
-			$got3 = $_GET['noms3'];
-			$list3 = $got3;
-			switch ($list3)
+			$GLOBALS['got3'] = $_GET['noms3'];
+			$GLOBALS['list3'] = $GLOBALS['got3'];
+			switch ($GLOBALS['list3'])
 			{
 				case 1:
 					$noms3 = "Steve Carell (Foxcatcher)";
@@ -244,9 +264,9 @@ if(isset($_SESSION['name']))
 		}
 		if ($_GET['noms4']) 
 		{
-			$got4 = $_GET['noms4'];
-			$list4 = $got4;
-			switch ($list4)
+			$GLOBALS['got4'] = $_GET['noms4'];
+			$GLOBALS['list4'] = $GLOBALS['got4'];
+			switch ($GLOBALS['list4'])
 			{
 				case 1:
 					$noms4 = "Marion Cotillard (Two Days, One Night)";
@@ -269,9 +289,9 @@ if(isset($_SESSION['name']))
 		}
 		if ($_GET['noms5']) 
 		{
-			$got5 = $_GET['noms5'];
-			$list5 = $got5;
-			switch ($list5)
+			$GLOBALS['got5'] = $_GET['noms5'];
+			$GLOBALS['list5'] = $GLOBALS['got5'];
+			switch ($GLOBALS['list5'])
 			{
 				case 1:
 					$noms5 = "Robert Duvall (The Judge)";
@@ -294,9 +314,9 @@ if(isset($_SESSION['name']))
 		}
 		if ($_GET['noms6']) 
 		{
-			$got6 = $_GET['noms6'];
-			$list6 = $got6;
-			switch ($list6)
+			$GLOBALS['got6'] = $_GET['noms6'];
+			$GLOBALS['list6'] = $GLOBALS['got6'];
+			switch ($GLOBALS['list6'])
 			{
 				case 1:
 					$noms6 = "Patricia Arquette (Boyhood)";
@@ -319,9 +339,9 @@ if(isset($_SESSION['name']))
 		}
 		if ($_GET['noms7']) 
 		{
-			$got7 = $_GET['noms7'];
-			$list7 = $got7;
-			switch ($list7)
+			$GLOBALS['got7'] = $_GET['noms7'];
+			$GLOBALS['list7'] = $GLOBALS['got7'];
+			switch ($GLOBALS['list7'])
 			{
 				case 1:
 					$noms7 = "Big Hero 6";
@@ -344,9 +364,9 @@ if(isset($_SESSION['name']))
 		}
 		if ($_GET['noms8']) 
 		{
-			$got8 = $_GET['noms8'];
-			$list8 = $got8;
-			switch ($list8)
+			$GLOBALS['got8'] = $_GET['noms8'];
+			$GLOBALS['list8'] = $GLOBALS['got8'];
+			switch ($GLOBALS['list8'])
 			{
 				case 1:
 					$noms8 = "Everything is Awesome (The Lego Movie)";
@@ -369,9 +389,9 @@ if(isset($_SESSION['name']))
 		}
 		if ($_GET['noms9']) 
 		{
-			$got9 = $_GET['noms9'];
-			$list9 = $got9;
-			switch ($list9)
+			$GLOBALS['got9'] = $_GET['noms9'];
+			$GLOBALS['list9'] = $GLOBALS['got9'];
+			switch ($GLOBALS['list9'])
 			{
 				case 1:
 					$noms9 = "Captain America";
@@ -395,6 +415,7 @@ if(isset($_SESSION['name']))
 					break;
 			}
 		}
+		echo "after button ". $GLOBALS['list1'],$GLOBALS['list2'],$GLOBALS['list3'],$GLOBALS['list4'],$GLOBALS['list5'],$GLOBALS['list6'],$GLOBALS['list7'],$GLOBALS['list8'],$GLOBALS['list9'];
 		/*
 		var_dump($got1);
 		var_dump($got2);
@@ -424,7 +445,7 @@ if(isset($_SESSION['name']))
 		//mysql_select_db( 'db1286261_alpha' );
 		mysql_select_db( $dbselect );
 		
-		$sql = "UPDATE users SET nom1='".$got1."', nom2='".$got2."', nom3='".$got3."', nom4='".$got4."', nom5='".$got5."', nom6='".$got6."', nom7='".$got7."', nom8='".$got8."', nom9='".$got9."' WHERE name='".$name."'";
+		$sql = "UPDATE users SET nom1='".$GLOBALS['list1']."', nom2='".$GLOBALS['list2']."', nom3='".$GLOBALS['list3']."', nom4='".$GLOBALS['list4']."', nom5='".$GLOBALS['list5']."', nom6='".$GLOBALS['list6']."', nom7='".$GLOBALS['list7']."', nom8='".$GLOBALS['list8']."', nom9='".$GLOBALS['list9']."' WHERE name='".$name."'";
 		//mysql_select_db( 'db1286261_alpha' );
 		mysql_select_db( $dbselect );
 		
@@ -442,8 +463,8 @@ if(isset($_SESSION['name']))
 		</div>
 		<?php
 		
-		echo $flagMe;
-		echo "total end $list1,$list2,$list3,$list4,$list5,$list6,$list7,$list8,$list9";
+		//echo $flagMe;
+		echo "Out side of css :". $GLOBALS['list1'],$GLOBALS['list2'],$GLOBALS['list3'],$GLOBALS['list4'],$GLOBALS['list5'],$GLOBALS['list6'],$GLOBALS['list7'],$GLOBALS['list8'],$GLOBALS['list9'];
 }		
 else{
 	echo"<h2>To Nominate, Please Register <a href='index.php'>Here</a> First.</h2>";

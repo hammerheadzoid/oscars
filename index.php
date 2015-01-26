@@ -113,7 +113,7 @@ if (isset($_GET['submit']))
 	
 	
 }
-echo "after button $list1,$list2,$list3,$list4,$list5,$list6,$list7,$list8,$list9";
+echo "Index page : ". $GLOBALS['list1'],$GLOBALS['list2'],$GLOBALS['list3'],$GLOBALS['list4'],$GLOBALS['list5'],$GLOBALS['list6'],$GLOBALS['list7'],$GLOBALS['list8'],$GLOBALS['list9'];
 ?>
 <h1>Enter Your Name:</h1>
 

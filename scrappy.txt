@@ -1,0 +1,32 @@
+echo "before button ".$GLOBALS['list1'],$GLOBALS['list2'],$GLOBALS['list3'],$GLOBALS['list4'],$GLOBALS['list5'],$GLOBALS['list6'],$GLOBALS['list7'],$GLOBALS['list8'],$GLOBALS['list9']."</br>";
+		?>
+		
+			 <script type="text/javascript">
+			<!--
+			
+			var answer = confirm ("So you really want to log out?");
+			if (answer)
+				{
+				setTimeout('Redirect()',1);
+				function Redirect()
+				{
+				  location.href = 'index.php';
+				}
+				}
+			else
+				{
+				document.write("<div class='header1'>You will return back to the Members Page any second now....</div><br />");
+				document.write("If you are not redirected please click on the link below.<br />");
+				document.write("<a href='member.php'>Back Donal to the members page!</a>");
+				setTimeout('Redirect()',1);
+				function Redirect()
+				{
+				  location.href = 'index.php';
+				}
+
+				}
+			// -->
+			</script>
+			
+			
+		<?php	
